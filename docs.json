@@ -2,12 +2,17 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Hoshan",
+  "description": "Hi, I'm Hoshan.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#cca3db",
-    "dark": "#ffdef3"
+    "primary": "#fcb8df",
+    "light": "#07C983",
+    "dark": "#fcb8df"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
@@ -16,40 +21,48 @@
           {
             "group": "Get Started",
             "pages": [
-              "index",
+              "introduction",
               "quickstart",
-              "development"
+              "installation",
+              "web-editor"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Concepts",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "core-concepts/settings",
+              "core-concepts/pages",
+              "core-concepts/navigation",
+              "core-concepts/themes"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/headers",
+              "components/images",
+              "components/lists",
+              "components/code"
             ]
           }
         ]
       },
       {
-        "tab": "My Works",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "My Works",
+            "group": "API Documentation",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/introduction",
+              "api-reference/authentication"
             ]
           },
           {
             "group": "Endpoint Examples",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoints/get",
+              "api-reference/endpoints/post",
+              "api-reference/endpoints/delete"
             ]
           }
         ]
@@ -75,15 +88,11 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@mintlify.com"
       }
     ],
     "primary": {
@@ -97,6 +106,15 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "api": {
+    "mdx": {
+      "server": "https://api.mintlify.com",
+      "auth": {
+        "method": "key",
+        "name": "x-api-key"
+      }
     }
   }
 }
