@@ -35,10 +35,10 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "My Works",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "My Works",
             "pages": [
               "api-reference/introduction"
             ]
